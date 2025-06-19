@@ -12,10 +12,13 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 h2 {
   text-transform: uppercase;
+  padding: 5px 0;
 }
 
 p {
@@ -27,16 +30,22 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtext {
   color: #a9a9a9;
   font-weight: unset;
+  padding-bottom: 10px;
 }
 
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 a {
@@ -52,6 +61,9 @@ input {
   width: 100%;
   height: 30px;
   padding: 5px;
+  margin-top: 5px;
+  border: 2px solid #80808085;
+  border-radius: 5px;
 }
 
 input[type="checkbox"],
@@ -82,4 +94,57 @@ input[type="submit"]:hover {
 
 .form select {
   height: 30px;
+}
+
+#sign-in-form, #sign-up-form  {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid black;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+}
+
+#avatar {
+  border: none;
+}
+.form-checkbox-control {
+  padding-top: 18px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.form-submit-control {
+padding: 30px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+hr {
+  border: 1.5px solid #5857574f;
+}
+
+#state, #city {
+  padding: 5px 0px;
+  border: 2px solid #80808085;
+  border-radius: 5px;
+}
+
+.not-bold {
+  font-weight: 400;
 }

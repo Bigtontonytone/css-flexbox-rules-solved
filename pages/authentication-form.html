@@ -45,14 +45,15 @@
               id="password-field"
               placeholder="passwords must match"
               minlength="8"
+              maxlength="20"
               required
             />
           </div>
           <div class="form-checkbox-control">
             <input type="checkbox" id="stay-signed-in" />
-            <label for="stay-signed-in">Stay signed in</label>
+            <label for="stay-signed-in" class="not-bold">Stay signed in</label>
           </div>
-          <hr />
+          <hr/>
           <div class="form-submit-control">
             <input type="submit" value="Sign in" />
             <a href="/#">Forgot your password?</a>
@@ -143,7 +144,7 @@
             </div>
           </div>
           <div class="form-input-control">
-            <p>Gender</p>
+            <p class="not-bold">Gender</p>
             <div class="form-group-vertical-control">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />
@@ -165,7 +166,7 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr/>
           <div class="form-submit-control">
             <input type="submit" value="Sign up" />
           </div>
